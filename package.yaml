@@ -1,0 +1,23 @@
+name: adventofcode2017
+version: 0.1.0
+maintainer: MATSUBARA Nobutada
+license: MIT
+github: matsubara0507/adventofcode2017
+extra-source-files:
+  - README.md
+ghc-options:
+  - -Wall
+  - -fno-warn-type-defaults
+
+dependencies:
+  - base
+
+library:
+  source-dirs: solutions
+
+tests:
+  doctest:
+    main:            Doctest.hs
+    source-dirs:     test
+    dependencies:
+      - doctest
